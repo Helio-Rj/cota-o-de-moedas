@@ -11,7 +11,7 @@ import requests
 def pegar_cotacoes():
     """
     Função que busca e exibe as cotações atuais de Dólar, Euro e ‘Bitcoin’.
-    
+
     Utiliza a API da AwesomeAPI (economia.awesomeapi.com.br) para obter
     as cotações em tempo real.
     """
@@ -54,7 +54,8 @@ def pegar_cotacoes():
 
 # Executa a função quando o programa é rodado
 # Este é o ponto de entrada do programa
-pegar_cotacoes()
+if __name__ == "__main__":
+    pegar_cotacoes()
 
 # ==================================================================
 # NOTAS DE APRENDIZADO:

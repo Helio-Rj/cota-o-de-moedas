@@ -1,9 +1,9 @@
 """
-Aplicativo de Cotações com Interface Gráfica (comentado para aprendizado)
+Aplicativo de Cotações com ‘Interface’ Gráfica (comentado para aprendizado)
 
 Este arquivo cria uma janela simples usando PyQt6 que consulta a API
-da AwesomeAPI para obter as cotações do Dólar, Euro e Bitcoin em Reais
-e exibe esses valores formatados na interface.
+da AwesomeAPI para obter as cotações do Dólar, Euro e ‘Bitcoin’ em Reais
+e exibe esses valores formatados na ‘interface’.
 
 Comentários foram adicionados em cada seção para fins didáticos.
 """
@@ -114,7 +114,7 @@ class JanelaPrincipal(QMainWindow):
         layout.addWidget(frame_cotacoes)
         layout.addWidget(self.botao_atualizar)
 
-        # ---------- Timer para atualização automática ----------
+        # ---------- Temporizador para atualização automática ----------
         # QTimer dispara um sinal (timeout) periodicamente
         self.timer = QTimer()
         self.timer.timeout.connect(self.atualizar_cotacoes)
@@ -131,7 +131,7 @@ class JanelaPrincipal(QMainWindow):
         1. Faz uma requisição HTTP para a API (requests.get)
         2. Converte a resposta JSON para dicionário (resposta.json())
         3. Extrai os valores (bid) e converte para float
-        4. Formata os valores e atualiza os widgets na interface
+        4. Formata os valores e atualiza os widgets na ‘interface’
         5. Em caso de erro, exibe mensagens amigáveis na UI
         """
         try:
@@ -161,7 +161,7 @@ class JanelaPrincipal(QMainWindow):
 
         except Exception as e:
             # Tratamento simples de erros: exibe mensagens nas labels
-            # Em aplicações maiores você pode mostrar um modal ou log.
+            # Em aplicações maiores você pode mostrar um modal ou ‘log’.
             self.label_dolar.setText("Erro ao atualizar cotações")
             self.label_euro.setText("Verifique sua conexão")
             # Converte o erro em string para ajudar no diagnóstico
@@ -170,7 +170,7 @@ class JanelaPrincipal(QMainWindow):
 
 if __name__ == '__main__':
     # Ponto de entrada: cria a aplicação Qt e abre a janela
-    # QApplication gerencia o loop de eventos e configurações da app
+    # QApplication gerencia o ‘loop’ de eventos e configurações da app
     app = QApplication(sys.argv)
 
     # Cria a janela principal e exibe na tela
