@@ -1,7 +1,7 @@
 
 # Cotação de Moedas 💱
 
-Aplicativo em Python para consultar cotações em tempo real de Dólar, Euro e Bitcoin em Reais (BRL), utilizando a API da AwesomeAPI. Possui interface gráfica moderna com PyQt6 e versão de linha de comando.
+Para este aplicativo em Python para consultar cotações em tempo real de Dólar, Euro e ‘Bitcoin’ em Reais (BRL), utilizando a API da AwesomeAPI. Possui ‘interface’ gráfica moderna com PyQt6 e versão de linha de comando.
 
 ## Funcionalidades
 - Consulta automática e manual das cotações USD/BRL, EUR/BRL e BTC/BRL
