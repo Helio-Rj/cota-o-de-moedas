@@ -154,7 +154,7 @@ class JanelaPrincipal(QMainWindow):
             self.label_euro.setText(f"Euro: R$ {cotacao_euro:,.2f}")
             self.label_btc.setText(f"Bitcoin: R$ {cotacao_btc:,.2f}")
 
-            # Feedback visual para o usuário: botão indica atualização
+            # Opinião visual para o usuário: botão indica atualização
             self.botao_atualizar.setText("Cotações Atualizadas!")
             # Volta o texto do botão ao normal após 2 segundos
             QTimer.singleShot(2000, lambda: self.botao_atualizar.setText("Atualizar Cotações"))

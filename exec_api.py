@@ -25,6 +25,9 @@ def pegar_cotacoes():
     # .json() é um método que transforma o texto JSON em estrutura de dados Python
     requisicao_dic = requisicao.json()
 
+    # Mostra exatamente o que a API retornou
+    print(requisicao_dic)
+
     # Extrai os valores de cotação do dicionário
     # - ['USDBRL'] acessa o par Dólar-Real
     # - ['bid'] pega o valor de venda atual
